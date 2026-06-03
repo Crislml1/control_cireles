@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "316236177757",
+    "project_id": "control-de-cireles",
+    "storage_bucket": "control-de-cireles.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:316236177757:android:df194f587235e003bd88b4",
+        "android_client_info": {
+          "package_name": "com.cireles.control"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmbgZe2_AMwchwN88z4FL57qm5MET9Mp0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
