@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:lucide_icons_flutter/lucide_icons.dart';
 
 import '../../../core/errors/app_exception.dart';
 import '../view_model/app_lock_providers.dart';
@@ -82,7 +83,7 @@ class _AppLockPageState extends ConsumerState<AppLockPage> {
                       borderRadius: BorderRadius.circular(22),
                     ),
                     child: Icon(
-                      Icons.lock_outlined,
+                      LucideIcons.lockKeyhole,
                       size: 40,
                       color: colorScheme.onPrimaryContainer,
                     ),
@@ -153,9 +154,9 @@ class _AppLockPageState extends ConsumerState<AppLockPage> {
   }
 
   IconData get _biometricIcon {
-    if (Platform.isWindows) return Icons.security;
-    if (Platform.isIOS) return Icons.face_retouching_natural;
-    return Icons.fingerprint;
+    if (Platform.isWindows) return LucideIcons.shield;
+    if (Platform.isIOS) return LucideIcons.scanFace;
+    return LucideIcons.fingerprintPattern;
   }
 
   String get _biometricLabel {
